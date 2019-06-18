@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  	<h1>Mi cuenta es: <%= @count %></h1>
+  	<br/>
+  <form action="/contador" method="get">
+    <input type="submit" value="¡SUMAR!">
+    <input type="hidden" name="c" value="<%= @count %>">
+  </form>
+</div>
+</body>
+</html>
