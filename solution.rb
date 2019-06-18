@@ -1,6 +1,4 @@
 require 'sinatra'
-require 'sinatra/reloader'
-
 
 get '/' do
 	@count = params[:item]
